@@ -1,0 +1,39 @@
+
+npx create-nuxt-app my-app
+
+🎉  Successfully created project my-app
+
+  To get started:
+
+        cd my-app
+        npm run dev
+
+  To build & start for production:
+
+        cd my-app
+        npm run build
+        npm run start
+
+
+----------------------------
+
+? Package manager: Npm
+? UI framework: Tailwind CSS
+? Template engine: HTML
+? Nuxt.js modules: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Linting tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Testing framework: None
+? Rendering mode: Single Page App
+? Deployment target: Static (Static/Jamstack hosting)
+? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? What is your GitHub username? tztechno
+? Version control system: Git
+
+----------------------------
+
+error
+
+   │   ✖ Nuxt Fatal Error                                │
+   │                                                     │
+   │   TypeError: nuxt.options._layers is not iterable   │
+   │                                                     │
