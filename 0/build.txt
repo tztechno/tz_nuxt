@@ -1,4 +1,9 @@
 
+改造元
+https://github.com/tztechno/tz_html_works/blob/main/my_apps3.html
+
+----
+
 npx create-nuxt-app my-app
 
 🎉  Successfully created project my-app
