@@ -1,12 +1,17 @@
 ----------------------------------------
+```
 npm install -g create-nuxt-app
+```
 ----------------------------------------
 [result]
 + create-nuxt-app@5.0.0
 added 10 packages from 4 contributors, removed 18 packages and updated 364 packages in 54.801s
 ----------------------------------------
+```
 create-nuxt-app my-nuxt-app
+```
 ----------------------------------------
+```
 ✨  Generating Nuxt.js project in my-nuxt-app
 ? Project name: my-nuxt-app
 ? Programming language: JavaScript
@@ -25,6 +30,7 @@ create-nuxt-app my-nuxt-app
 ? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ? What is your GitHub username? tztechno
 ? Version control system: Git
+```
 ----------------------------------------
 🎉  Successfully created project my-nuxt-app
 
