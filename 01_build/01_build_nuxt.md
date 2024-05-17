@@ -1,3 +1,5 @@
+
+# install
 ----------------------------------------
 ```
 npm install -g create-nuxt-app
@@ -32,6 +34,7 @@ create-nuxt-app my-nuxt-app
 ? Version control system: Git
 ```
 ----------------------------------------
+```
 🎉  Successfully created project my-nuxt-app
 
   To get started:
@@ -44,12 +47,17 @@ create-nuxt-app my-nuxt-app
         cd my-nuxt-app
         yarn build
         yarn start
-
+```
 ----------------------------------------
+```
 cd my-nuxt-app
+```
 ----------------------------------------
+```
 yarn dev
+```
 ----------------------------------------
+```
 yarn run v1.22.21
 $ nuxt
 
@@ -80,6 +88,8 @@ $ nuxt
 ℹ Waiting for file changes                                                                                     11:59:27 AM
 ℹ Memory usage: 143 MB (RSS: 289 MB)                                                                           11:59:27 AM
 ℹ Listening on: http://localhost:3000/       
+
+```
 ----------------------------------------
 ----------------------------------------
 ----------------------------------------
