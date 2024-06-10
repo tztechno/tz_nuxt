@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Todo List</h1>
+        <input v-model="newTodo" @keyup.enter="addTodo" placeholder="Add a new todo" />
+        <ul>
+            <li v-for="(todo, index) in todos" :key="index">
+                <input type="checkbox" v-model="todo.done" />
+                <span :style="{ textDecoration: todo.done ? 'line-through' : 'none' }">{{ todo.text }}</span>
+                <button @click="removeTodo(index)">Remove</button>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    newTodo: '',
+                    todos: []
+                };
+            },
+            mounted() {
+                const savedTodos = localStorage.getItem('todos');
+                if (savedTodos) {
+                    this.todos = JSON.parse(savedTodos);
+                }
+            },
+            watch: {
+                todos: {
+                    deep: true,
+                    handler(newTodos) {
+                        localStorage.setItem('todos', JSON.stringify(newTodos));
+                    }
+                }
+            },
+            methods: {
+                addTodo() {
+                    if (this.newTodo.trim() !== '') {
+                        this.todos.push({ text: this.newTodo, done: false });
+                        this.newTodo = '';
+                    }
+                },
+                removeTodo(index) {
+                    this.todos.splice(index, 1);
+                }
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>
+
+</html>
