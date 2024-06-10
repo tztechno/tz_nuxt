@@ -2,6 +2,8 @@
 
 ### 静的HTMLファイルでのToDoアプリ
 
+#（注意）この方法は問題があったので失敗
+
 #### HTML部分
 ```html
 <!DOCTYPE html>
